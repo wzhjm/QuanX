@@ -1,21 +1,6 @@
-/*
-
+#去发圈去水印
 [rewrite_local]
-^https?:\/\/api\.waixiaodian\.com\/zwyd\/common\/config url script-response-body https://raw.githubusercontent.com/wzhjm/qx_tools/main/qfq.js
+^https://api.waixiaodian.com/zwyd/tools/auth/watermark url reject-200
 
 [mitm]
 hostname = api.waixiaodian.com
-
- */
-
-if ($response.body != 'undefined') {
-  var body = $response.body;
-  var chxm1023 = JSON.parse(body);
-  const urla = '/zwyd/common/config';
-
-
-  if ($request.url.indexOf(urla) != -1) {
-    body = body.replace('解封水印，关注趣发圈圈|公众号：qufaquan', '');
-  }
-  $done({ body });
-}
