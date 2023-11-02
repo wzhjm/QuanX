@@ -5,3 +5,4 @@
 
 [万能钥匙去广告](https://raw.githubusercontent.com/wzhjm/QuanX/main/Rewrites/wnys.snippet)
 
+[i 茅台](https://raw.githubusercontent.com/wzhjm/QuanX/main/Rewrites/i-maotai.snippet)
